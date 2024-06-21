@@ -4,20 +4,24 @@
   
   .video-title {
     margin-top: 0;
-    font-size: 14px;
+    font-size: 23px;
     font-weight: 500;
     line-height: 20px;
-    margin-bottom: 12px;
+    margin-bottom: 17px;
+    padding-left: 29px;
+    line-height: 29px;
   }
   
   .video-info-grid {
     display: grid;
     grid-template-columns: 50px 1fr;
+    
   }
   
   .profile-picture {
-    width: 40px;
+    width: 60px;
     border-radius: 50px;
+    
   }
   
   .thumbnail-row {
@@ -27,8 +31,10 @@
   
   .video-author,
   .video-stats {
-    font-size: 12px;
+    font-size: 20px;
     color: rgb(96, 96, 96);
+    padding-left: 29px;
+    
   }
   
   .video-author {
@@ -40,6 +46,9 @@
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 16px;
     row-gap: 40px;
+    margin-left: 90px;
+    margin-top: 55px;
+    background-color: white;
   }
   
   .video-time {
