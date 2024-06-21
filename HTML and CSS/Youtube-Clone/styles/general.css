@@ -8,4 +8,6 @@ p {
     margin: 0;
     padding-top: 80px;
     padding-left: 80px;
+    height: 980px;
+    background-color: rgb(247, 247, 247);
   }
