@@ -50,15 +50,33 @@
     margin-top: 55px;
     background-color: white;
   }
+
+@media (max-width: 1000px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+
+  }
+}
+
+@media (min-width:1001px) and (max-width: 1199px){
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1200px ) {
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  
+}
+
   
   .video-time {
     font-family: Roboto, Arial;
     font-size: 12px;
     font-weight: 500;
-    padding-left: 4px;
-    padding-right: 4px;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding: 4px;
     border-radius: 2px;
     background-color: black;
     color: white;
