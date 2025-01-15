@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+    <body>
+    <script>
+        /*
+        const product = {
+            name: 'Socks',
+            price: 1080
+        };
+        console.log(product);
+        console.log(product.name);
+        console.log(product.price);
+
+        product.name = 'cotton socks';
+        console.log(product);
+        product.qty = 55;
+        console.log(product);
+        delete product.qty;
+        console.log(product);
+        */
+
+        const prod2 = {
+            name: 'shirt',
+            ['delivery-time']: '1-day',
+            rating: {
+                stars: 4.5,
+                count: 87
+            },
+            fun: function func1() {
+                console.log('function inside an object');
+            }
+        }
+        console.log(prod2);
+        console.log(prod2.name);
+        console.log(prod2['name']);
+        console.log(prod2['delivery-time']);
+        console.log(prod2.rating.count);
+        prod2.fun();
+        console.log(typeof console);
+
+        console.log(JSON.stringify(prod2));
+        const json_str = JSON.stringify(prod2);
+        console.log(JSON.parse(json_str));
+
+    
+    </script>
+</body>
+</html>
