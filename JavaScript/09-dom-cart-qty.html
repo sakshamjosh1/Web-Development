@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Quantity</title>
+</head>
+<body>
+    <h2>Cart Quantity</h1>
+    <button onclick="
+        cartqty++;
+        displayqty();
+    ">Add to cart</button>
+    <button onclick="cartqty+=2;
+    displayqty();
+    ">+2</button>
+    <button onclick="cartqty+=3;
+    displayqty();
+    ">+3</button>
+    <button onclick="cartqty+=4;
+    displayqty();
+    ">+4</button>
+    <button onclick="cartqty+=5;
+    displayqty();
+    ">+5</button>
+    <button onclick="cartqty--;
+    displayqty();
+    ">Remove from cart</button>
+    <button onclick="cartqty-=2;
+    displayqty();
+    ">-2</button>
+    <button onclick="cartqty-=3;
+    displayqty();
+    ">-3</button>
+    <button onclick="cartqty=0;
+    displayqty();
+    ">Reset Cart</button>
+    <p class="js-result"></p>
+    <script>
+        let cartqty=0;
+
+        function displayqty() {
+          document.querySelector('.js-result')
+            .innerHTML= `You cart has ${cartqty} items`; 
+        }
+          
+    </script>
+</body>
+</html>

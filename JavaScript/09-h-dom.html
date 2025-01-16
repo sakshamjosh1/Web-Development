@@ -1,0 +1,24 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simultaneously Text Print</title>
+</head>
+<body>
+
+    <input class="js-enter"  placeholder="Enter the text"
+    onkeyup="
+        printString();
+    ">
+    <p class="js-result"></p> 
+
+    <script>
+                        
+        function printString() {
+            const inputElement = document.querySelector('.js-enter'); 
+            document.querySelector('.js-result')
+              .innerHTML = inputElement.value;
+        }
+    </script>
+</body>
+</html>
